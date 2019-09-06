@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react'
+import './App.css'
+// import TapBar from './components/items/TapBar'
+import TapShare from './components/items/TapShare'
+// import { withStyles } from '@material-ui/core/styles'
+const stylesI = theme => ({
+    BGcolor: {
+        backgroundColor: '#6999E2',
+    }
+});
+class App extends React.Component {
+    render() {
+        return (
+            <React.Fragment>
+                <TapShare/>  
+                {/* <TapBar/> */}
+            </React.Fragment>
+        )
+    }
 }
 
 export default App;
